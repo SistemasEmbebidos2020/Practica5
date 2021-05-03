@@ -1,4 +1,4 @@
-# Practica5
+# Practica5 :white_check_mark:
 
 ## El comando EEPROM.put es una variante del comando EEPROM.write
 Su ventaja es que únicamente escribe el dato en esa dirección si es un dato diferente al ya existente en dicha dirección.

@@ -16,3 +16,7 @@ rápidamente llegar al límite de veces que admite la memoria EEPROM**
 la memoria FLASH es para almacenar el
 código fuente, también se le puede dar uso para almacenar valores siempre y
 cuando sean valores constantes.
+
+# CLONE
+- git status
+- git clone https://github.com/SistemasEmbebidos2020/Practica5.git

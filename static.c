@@ -1,7 +1,7 @@
 /*CODIGO ASIGNACION ESTATICA*/
 #include <avr/io.h>
-#include <stdlib.h> //libreria para almacenar variables en la FLASH
-#define MAX_DATOS 100 //Cantidad de memoria máxima a reservar de manera estatica
+#include <stdlib.h> 
+#define MAX_DATOS 100 
 #define SEMILLA 0
 uint8_t estatico[MAX_DATOS];
 uint8_t cantidad,i;

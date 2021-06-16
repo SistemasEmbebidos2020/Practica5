@@ -1,7 +1,7 @@
 /*CODIGO ASIGNACION DINAMICA*/
 #include <avr/io.h>
 #include <stdlib.h>
-#define MAX_DATOS 100 //Cantidad de memoria máxima a reservar de manera estatica
+#define MAX_DATOS 100 
 #define SEMILLA 0
 uint8_t cantidad,i;
 char *ptr;

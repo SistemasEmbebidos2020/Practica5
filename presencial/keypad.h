@@ -7,8 +7,6 @@
 #define keypad
 
 
-//CLAVES PREDEFINIDAS PARA EL ACCESO
-int i,j;
 int contador=13;
 unsigned char tabla[16]={
 	'1', '2', '3', 'A',
@@ -17,18 +15,20 @@ unsigned char tabla[16]={
     '*', '0', '#', 'D' };
 
 //FUNCION PARA INICIALIZAR EL TECLADO QUE INICIALIZAN LOS PINES QUE ESTAR N CONECTADOS
+
 void KEYPAD_init(void)
 {
 	//CONFIGURACI N DE LOS PINES DE LAS FILAS COMO SALIDAS
 	DDRB = 0B1111;
 	PORTB = 0B1111;
-	//activacion pullup puertoC para columnas
+	//activacion pullup puertoC
 	PORTC = 0B1111;
 }
 
-char KEYPAD_read()
+
+char KEYPAD_read(void)
 {
-	
+    uint8_t i,j;
 	for(i = 1;i<5;i++)
 	{
 		PORTB = ~(1<<(i-1)) ;
@@ -47,5 +47,9 @@ char KEYPAD_read()
 	}
 	return tabla[contador];
 }
+
+
+
+
 
 #endif

@@ -3,7 +3,7 @@
 #include "keypad.h"
 static unsigned char valor = '0';
 
-void readeeproms()
+void main()
 {
 KEYPAD_init();
 DDRD = 255;

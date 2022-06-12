@@ -10,7 +10,7 @@ DDRD = 255;
 char valor = '0';
 while(1){
 valor = KEYPAD_read();
-if (valor == '1') PORTD = eeprom_read_byte((uint8_t *)(11));
+if (valor == '1') PORTD = eeprom_read_byte((uint8_t *)(1));
 else if (valor == '2') PORTD = eeprom_read_byte((uint8_t *)(2));
 else if (valor == '3') PORTD = eeprom_read_byte((uint8_t *)(3));
 else if (valor == '4') PORTD = eeprom_read_byte((uint8_t *)(4));

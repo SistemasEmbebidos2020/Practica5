@@ -3,6 +3,9 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+#ifndef keypad
+#define keypad
+
 
 //CLAVES PREDEFINIDAS PARA EL ACCESO
 int i,j;
@@ -45,3 +48,4 @@ char KEYPAD_read()
 	return tabla[contador];
 }
 
+#endif

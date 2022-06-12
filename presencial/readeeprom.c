@@ -2,13 +2,12 @@
 #include <avr/eeprom.h> //archivo de cabecera para la utilización de la EEPROM AVR
 #include <avr/io.h>
 #include "keypad.h"
-static unsigned char valor = '0';
 
 void readeeproms()
 {
 KEYPAD_init();
 DDRD = 255;
-//PORTB = 0B1111;
+char valor = '0';
 while(1){
 valor = KEYPAD_read();
 if (valor == '1') PORTD = eeprom_read_byte((uint8_t *)(11));

@@ -1,7 +1,7 @@
 #include <avr/io.h>
 #include "keypad.h"
 static unsigned char val = '0';
-void leds()
+void main()
 {
 KEYPAD_init();
 DDRD = 255;

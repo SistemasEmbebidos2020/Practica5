@@ -3,14 +3,19 @@
 #include <util/delay.h>
 #include <avr/io.h>
 
-static uint8_t i = 0;
-uint8_t *k = 0;
+#ifndef eepromwrite
+#define eepromwrite
+
+//volatile static 
 void main()
 {
+
+int i=0;
 for(i=0;i<16;i++)
  {
- eeprom_write_byte(i,i);
+ eeprom_write_byte((uint8_t *)(i),i);
 	_delay_ms(500);
 
 	}
 }
+#endif

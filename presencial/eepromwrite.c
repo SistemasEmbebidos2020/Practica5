@@ -7,7 +7,7 @@
 #define eepromwrite
 
 //volatile static 
-void main()
+void eepromwrites()
 {
 
 int i=0;

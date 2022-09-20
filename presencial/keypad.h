@@ -38,10 +38,10 @@ char KEYPAD_read(void)
 			if(!(PINC&(1<<(j-1))))
 			{
 				while(!(PINC&(1<<(j-1)))) {}
-				if (i == 1)	contador = (j-1);
-				else if (i == 2)	contador = (j+3);
-				else if (i == 3)	contador = (j+7);
-				else if (i == 4)	contador = (j+11);	 	   
+				if (i == 4)	contador = (j-1);
+				else if (i == 3)	contador = (j+3);
+				else if (i == 2)	contador = (j+7);
+				else if (i == 1)	contador = (j+11);	 	   
 			}
 		}
 	}

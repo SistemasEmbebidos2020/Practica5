@@ -2,10 +2,10 @@
 #include <avr/io.h>
 
 
-#ifndef readeeprom
-#define readeeprom
-void readeeproms(uint8_t pos)
+#ifndef EepromReadSpace
+#define EepromReadSpace
+uint8_t readeeproms(uint8_t * pos)
 {
-eeprom_read_byte((uint8_t *)(pos));
+return eeprom_read_byte((uint8_t *)(pos));
 }
 #endif

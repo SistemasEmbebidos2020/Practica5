@@ -7,15 +7,9 @@
 #define eepromwrite
 
 //volatile static 
-void eepromwrites()
+void eepromwrites(uint8_t * pos, int val)
 {
 
-int i=0;
-for(i=0;i<16;i++)
- {
- eeprom_write_byte((uint8_t *)(i),i);
-	_delay_ms(500);
-
-	}
+eeprom_write_byte((uint8_t *)(pos),val);
 }
 #endif

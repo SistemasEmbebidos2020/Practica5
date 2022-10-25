@@ -18,6 +18,9 @@ void setup(){
 void loop(){
   
 }
+/////////FIN
+////////PRIMERA Y TERCERA PARTE DE LA PRACTICA
+
 
 
 ///////////////SEGUNDA PARTE DE LA PRACTICA//////////

@@ -1,10 +1,12 @@
-#include <avr/io.h>
-#include "keyled.h"
-#include "eepromwrite.h"
-#include "readeeprom.h"
-int main(){
-//eepromwrites();
-while(1)
-leds();
-//readeeproms();
+#include <Arduino.h>
+
+#include "EepromReadSpace.h"
+
+int posicion = 0;
+void setup(){
+  Serial.begin(115200);
+}
+
+void loop(){
+  Serial.println(readeeproms(posicion));
 }

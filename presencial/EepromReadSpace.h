@@ -4,8 +4,8 @@
 
 #ifndef readeeprom
 #define readeeprom
-void readeeproms()
+void readeeproms(uint8_t pos)
 {
-eeprom_read_byte((uint8_t *)(1));
+eeprom_read_byte((uint8_t *)(pos));
 }
 #endif

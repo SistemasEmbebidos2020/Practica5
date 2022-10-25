@@ -1,4 +1,8 @@
+
+
 #include <Arduino.h>
+
+////////PRIMERA Y TERCERA PARTE DE LA PRACTICA
 
 //Para leer posicion de la memoria eeprom
 //lo realizamos con el siguiente codigo
@@ -16,6 +20,8 @@ void loop(){
 }
 
 
+///////////////SEGUNDA PARTE DE LA PRACTICA//////////
+/*
 //Para escribir un valor en cualquier posicion de la eeprom
 #include "eepromwrite.h"
 
@@ -27,3 +33,4 @@ void setup(){
 }
 void loop(){
 }
+*/

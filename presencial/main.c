@@ -2,7 +2,7 @@
 
 #include <Arduino.h>
 
-////////PRIMERA
+////////PRIMERA PARTE
 
 //Para leer posicion de la memoria eeprom
 //lo realizamos con el siguiente codigo
@@ -19,7 +19,7 @@ void loop(){
   
 }
 /////////FIN
-////////PRIMERA
+////////PRIMERA  PARTE
 
 
 
